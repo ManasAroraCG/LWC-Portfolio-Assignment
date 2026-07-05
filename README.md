@@ -6,9 +6,9 @@ A personal developer portfolio built as a **Lightning Web Component (LWC)** on t
 
 ## Screenshots
 
-![Portfolio Hero & Cards](./docs/screenshots/portfolio1.png)
+<img src="./docs/screenshots/portfolio1.png" width="100%" alt="Portfolio Hero & Cards" />
 
-![Portfolio Full View](./docs/screenshots/portfolio2.png)
+<img src="./docs/screenshots/portfolio2.png" width="100%" alt="Portfolio Full View" />
 
 ---
 
