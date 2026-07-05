@@ -1,0 +1,77 @@
+<template>
+    <template if:true={portfolio}>
+
+        <div class="portfolio-wrapper">
+
+            <div class="hero">
+                <div class="hero-orb hero-orb-1"></div>
+                <div class="hero-orb hero-orb-2"></div>
+                <div class="profile-img-wrapper">
+                    <img src={portfolio.Profile_Image_URL__c} alt="Profile Photo" class="profile-image" />
+                </div>
+                <h1 class="hero-name">{portfolio.Full_Name__c}</h1>
+                <p class="hero-title">{portfolio.Professional_Title__c}</p>
+            </div>
+
+            <div class="main-content">
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">&#128100;</span>
+                        <h3>About Me</h3>
+                    </div>
+                    <p class="card-text">{portfolio.About_Me__c}</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">&#9889;</span>
+                        <h3>Skills</h3>
+                    </div>
+                    <div class="skills-container">
+                        <template for:each={skillsList} for:item="skill">
+                            <span key={skill} class="skill-badge">{skill}</span>
+                        </template>
+                    </div>
+                </div>
+
+                <div class="bottom-row">
+
+                    <div class="card half-card">
+                        <div class="card-header">
+                            <span class="card-icon">&#9993;</span>
+                            <h3>Contact</h3>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">{portfolio.Portfolio_Email__c}</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Phone</span>
+                            <span class="contact-value">{portfolio.Portfolio_Phone__c}</span>
+                        </div>
+                    </div>
+
+                    <div class="card half-card">
+                        <div class="card-header">
+                            <span class="card-icon">&#128279;</span>
+                            <h3>Social Links</h3>
+                        </div>
+                        <div class="social-links">
+                            <a href={portfolio.LinkedIn_URL__c} target="_blank" class="social-btn linkedin-btn">
+                                LinkedIn &#8599;
+                            </a>
+                            <a href={portfolio.GitHub_URL__c} target="_blank" class="social-btn github-btn">
+                                GitHub &#8599;
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </template>
+</template>

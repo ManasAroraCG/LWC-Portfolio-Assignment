@@ -1,0 +1,220 @@
+.portfolio-wrapper {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 16px 48px;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* ── HERO ── */
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 56px 32px 52px;
+    background: linear-gradient(145deg, #032d60 0%, #0176d3 60%, #1b96ff 100%);
+    border-radius: 0 0 48px 48px;
+    color: white;
+    overflow: hidden;
+    margin-bottom: 28px;
+    box-shadow: 0 8px 32px rgba(1, 118, 211, 0.3);
+}
+
+.hero-orb {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.hero-orb-1 {
+    width: 260px;
+    height: 260px;
+    top: -80px;
+    right: -60px;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.hero-orb-2 {
+    width: 180px;
+    height: 180px;
+    bottom: -50px;
+    left: -40px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.profile-img-wrapper {
+    display: inline-block;
+    padding: 4px;
+    background: linear-gradient(135deg, #ffffff 0%, rgba(255, 255, 255, 0.55) 100%);
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.28);
+}
+
+.profile-image {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-name {
+    font-size: 34px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    letter-spacing: -0.5px;
+}
+
+.hero-title {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+/* ── LAYOUT ── */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.bottom-row {
+    display: flex;
+    gap: 16px;
+}
+
+.half-card {
+    flex: 1;
+    min-width: 0;
+}
+
+/* ── CARD ── */
+.card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 22px 26px;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.07), 0 0 0 1px rgba(0, 0, 0, 0.04);
+    transition: box-shadow 0.22s ease, transform 0.22s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(1, 118, 211, 0.13), 0 0 0 1px rgba(1, 118, 211, 0.08);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #f0f4ff;
+}
+
+.card-icon {
+    font-size: 17px;
+    line-height: 1;
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #0176d3;
+}
+
+.card-text {
+    margin: 0;
+    color: #3e3e3c;
+    line-height: 1.75;
+    font-size: 14px;
+}
+
+/* ── SKILLS ── */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-badge {
+    display: inline-block;
+    padding: 5px 13px;
+    background: #f0f6ff;
+    color: #0054a6;
+    border: 1px solid #cce0ff;
+    border-radius: 20px;
+    font-size: 12.5px;
+    font-weight: 600;
+    transition: background 0.18s ease, color 0.18s ease;
+}
+
+.skill-badge:hover {
+    background: #0176d3;
+    color: #ffffff;
+    border-color: #0176d3;
+}
+
+/* ── CONTACT ── */
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+}
+
+.contact-item:last-child {
+    margin-bottom: 0;
+}
+
+.contact-label {
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #8e9096;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.contact-value {
+    font-size: 14px;
+    color: #181818;
+    font-weight: 500;
+    word-break: break-all;
+}
+
+/* ── SOCIAL ── */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-btn {
+    display: block;
+    text-align: center;
+    padding: 11px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.17s ease, box-shadow 0.17s ease;
+}
+
+.social-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.18);
+}
+
+.linkedin-btn {
+    background: #0a66c2;
+    color: white;
+}
+
+.github-btn {
+    background: #24292f;
+    color: white;
+}
